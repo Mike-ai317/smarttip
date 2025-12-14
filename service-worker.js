@@ -2,7 +2,8 @@ const CACHE_NAME = 'smarttip-v1';
 const urlsToCache = [
   './',
   './index.html',
-  './manifest.json'
+  './manifest.json',
+  './index.tsx'
 ];
 
 self.addEventListener('install', (event) => {
