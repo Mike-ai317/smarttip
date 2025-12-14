@@ -1,0 +1,7 @@
+{
+  "name": "SmartTip",
+  "description": "A modern, intelligent tip calculator featuring real-time splitting and AI-powered receipt scanning to automatically detect bill totals.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
