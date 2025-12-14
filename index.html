@@ -9,8 +9,12 @@
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/1077/1077119.png">
     <title>SmartTip - AI Powered Tip Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
+      // Polyfill process.env to prevent ReferenceError in browser
+      window.process = { env: { API_KEY: '' } }; 
+      
       tailwind.config = {
         theme: {
           extend: {
@@ -62,7 +66,8 @@
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Changed type to text/babel and added extension -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

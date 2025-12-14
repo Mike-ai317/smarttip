@@ -3,7 +3,12 @@ const urlsToCache = [
   './',
   './index.html',
   './manifest.json',
-  './index.tsx'
+  './index.tsx',
+  './App.tsx',
+  './types.ts',
+  './components/Calculator.tsx',
+  './components/Scanner.tsx',
+  './services/geminiService.ts'
 ];
 
 self.addEventListener('install', (event) => {

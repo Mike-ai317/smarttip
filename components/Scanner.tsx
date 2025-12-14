@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Camera, Upload, Loader2, CheckCircle2, AlertCircle, X } from 'lucide-react';
-import { analyzeReceipt } from '../services/geminiService';
+import { analyzeReceipt } from '../services/geminiService.ts';
 
 interface ScannerProps {
   onScanComplete: (amount: number, currency: string) => void;

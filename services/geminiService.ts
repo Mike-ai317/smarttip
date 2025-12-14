@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { ReceiptScanResult } from "../types";
+import { ReceiptScanResult } from "../types.ts";
 
 const API_KEY = process.env.API_KEY || '';
 

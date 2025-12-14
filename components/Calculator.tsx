@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DollarSign, Users, Percent, Minus, Plus, RefreshCcw } from 'lucide-react';
-import { BillState, CalculationResult } from '../types';
+import { BillState, CalculationResult } from '../types.ts';
 
 interface CalculatorProps {
   initialAmount?: number;

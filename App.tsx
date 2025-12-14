@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Calculator } from './components/Calculator';
-import { Scanner } from './components/Scanner';
-import { AppMode } from './types';
+import { Calculator } from './components/Calculator.tsx';
+import { Scanner } from './components/Scanner.tsx';
+import { AppMode } from './types.ts';
 import { Github, Zap } from 'lucide-react';
 
 const App: React.FC = () => {
